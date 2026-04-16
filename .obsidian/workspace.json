@@ -1,0 +1,221 @@
+{
+  "main": {
+    "id": "e3648c4c946f29f9",
+    "type": "split",
+    "children": [
+      {
+        "id": "b262b57d1fac6c8c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "55e378ec4d2c4fc2",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "de11197c3353e94d",
+    "type": "split",
+    "children": [
+      {
+        "id": "320f0864e5144560",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2c7abd38d2b8695d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "e81b17b35a152a97",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "74f8cff437a364cd",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "1fe6728710c2595a",
+    "type": "split",
+    "children": [
+      {
+        "id": "93d26bebc9f428aa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "eb1eb2dc6bf32c09",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Welcome.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Welcome"
+            }
+          },
+          {
+            "id": "a9326daba925e1fc",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Welcome.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Welcome"
+            }
+          },
+          {
+            "id": "ee5ed39c48bdab40",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "c856addd1f8e2ea0",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "0f24413eb4f0c5af",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Welcome.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Welcome"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "55e378ec4d2c4fc2",
+  "lastOpenFiles": [
+    "README.md",
+    "hotcache.md.tmp.15128.1776330378339",
+    "wiki/concepts/IPMI.md",
+    "wiki/entities/Intel Xeon D-1700 (Ice Lake-D).md",
+    "wiki/sources/ARK-7060.md",
+    "wiki/entities/Ashish Vaswani.md",
+    "wiki/entities/Google Brain.md",
+    "wiki/synthesis/advantech-ark-series-comparison.md",
+    "wiki/sources/attention-is-all-you-need.md",
+    "wiki/concepts/Isolated IO.md",
+    "wiki/concepts/Industrial IO.md",
+    "log.md.tmp.15128.1776329517023",
+    "hotcache.md.tmp.15128.1776329508437",
+    "Industrial IO/Industrial IO.md",
+    "index.md",
+    "Industrial I-O.md",
+    "hotcache.md.tmp.15128.1776328717284",
+    "log.md.tmp.15128.1776328682714",
+    "wiki/sources/ARK-3532B.md",
+    "wiki/sources/ARK-3520L.md",
+    "Industrial I/O.md",
+    "wiki/sources/ARK-10.md",
+    "Industrial I",
+    "Isolated I/O.md",
+    "Isolated I",
+    "create a link.md",
+    "raw/ark-3000series/ARK-3534D.md",
+    "raw/ark-3000series/ARK-3534C.md",
+    "raw/ark-3000series/ARK-3532C.md",
+    "raw/ark-3000series/ARK-3532B.md",
+    "raw/ark-3000series/ARK-3520L.md",
+    "raw/ARK-3520L.md",
+    "raw/ARK-3534D.md",
+    "raw/ark-3000series",
+    "raw/ark-6000series",
+    "raw/ark-7000series"
+  ]
+}
