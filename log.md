@@ -172,3 +172,21 @@
 - Files deleted (already gone from disk, removed from index): `wiki/sources/attention-is-all-you-need.md`, `wiki/entities/Ashish Vaswani.md`, `wiki/entities/Google Brain.md`, `wiki/concepts/Transformer Architecture.md`, `wiki/concepts/Self-Attention.md`, `wiki/concepts/Multi-Head Attention.md`, `wiki/concepts/Positional Encoding.md`
 - Pages updated: `index.md` — removed AI/ML Papers section, AI/ML Concepts section, People section, Google Brain from Organisations; updated total page count to 52
 - Rationale: Wiki scope is now exclusively Advantech ARK hardware per user instruction
+
+---
+
+## [2026-04-17] ingest | MIC-7 Series (8 files)
+
+- Action: Ingested 8 Advantech MIC-series source files from `raw/MIC-series/`
+- Source files: High Performance Embedded Box IPC (MIC-7000).md, MIC-760.md, MIC-770.md, MIC-770 V2.md, MIC-770 V3.md, MIC-7700.md, MIC-780.md, MIC-785.md
+- Pages created (sources): `wiki/sources/mic-7000-series-overview.md`, `MIC-760.md`, `MIC-770.md`, `MIC-770-V2.md`, `MIC-770-V3.md`, `MIC-7700.md`, `MIC-780.md`, `MIC-785.md`
+- Pages created (entities): `Intel Core Ultra Series 2.md`, `Intel 8th-9th Gen Core (LGA1151).md`, `Intel 6th-7th Gen Core Desktop (LGA1151).md`, `AMD Ryzen Embedded AM5.md`
+- Pages created (concepts): `i-Module.md`, `NPU.md`, `ROS2.md`, `FlexIO.md`, `AMR MMR.md`, `EtherCAT.md`
+- Pages created (synthesis): `MIC-770x.md` (generational hub), `MIC-78x.md` (Intel vs AMD hub), `mic-series-comparison.md` (master MIC comparison)
+- Pages updated: `Advantech.md` (MIC product lines + CPU table + related entities), `Intel 12th-14th Gen Core (Raptor Lake LGA1700).md` (MIC-760 + MIC-770 V3 added), `Intel 10th Gen Xeon W (Comet Lake-S).md` (MIC-770 V2 added), `CAN Bus.md` (MIC-760 added), `SUSIAccess.md` (full MIC coverage + SUSI API clarification), `iDoor.md` (MIC-770 V2/V3 + MIC-785 added), `index.md` (21 entries added, total 73 pages)
+- Contradictions found: none with ARK series; MIC-7 is a parallel product line, not overlapping
+- Key finding: MIC-780 is the first fanless industrial box PC with integrated NPU (Intel Core Ultra Series 2 AI Boost) — unique in this entire wiki
+- Key finding: MIC-785 is the first and only AMD-based product in this wiki (Ryzen Embedded / EPYC 4005, AM5)
+- Key finding: MIC-760 is the only model in wiki with Industrial WiFi and ROS2 readiness — purpose-built for AMR/MMR mobile robotics
+- Key finding: MIC-7700 (DVI + CFast), MIC-760 (full specs), MIC-785 (full specs) have incomplete raw data — feature lists only, no spec tables
+- Open questions flagged: MIC-760/7700/785 detailed specs (RAM, temp, dimensions) missing; i-Module cross-generation compatibility unconfirmed; iBMC 1.2 vs IPMI 2.0 capability gap; NPU TOPS rating for MIC-780 not specified

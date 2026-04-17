@@ -3,8 +3,8 @@ title: "iDoor"
 type: concept
 tags: [hardware, advantech, expansion, embedded]
 created: 2026-04-16
-updated: 2026-04-16
-sources: [ARK-6322]
+updated: 2026-04-17
+sources: [ARK-6322, ARK-1124C, ARK-1124H, MIC-770-V2, MIC-770-V3, MIC-785]
 ---
 
 # iDoor
@@ -25,13 +25,18 @@ Enables I/O expansion in a compact, integrated form factor — the module fits w
 - Fieldbus (Profibus, PROFINET, EtherCAT)
 - Wireless (Wi-Fi, LTE)
 
-## Availability in ARK-6322
+## Availability Across This Wiki
 
-Listed as "Optional iDoor Modules" — specific slot configuration not detailed in the spec sheet.
+- **ARK-6322** — Optional iDoor modules (slot config unspecified)
+- **ARK-1124C, ARK-1124H** — iDoor supported
+- **MIC-770 V2, MIC-770 V3** — iDoor supported (rear panel); works alongside FlexIO (front panel)
+- **MIC-785** — iDoor supported alongside FlexIO and i-Module
+
+Note: iDoor is distinct from [[FlexIO]] (front-panel I/O modules) and [[i-Module]] (PCIe expansion chassis).
 
 ## Related Concepts
 
-[[Industrial IO]], [[Fanless Embedded PC]]
+[[FlexIO]], [[i-Module]], [[Industrial IO]], [[Fanless Embedded PC]]
 
 ## Related Entities
 
@@ -39,4 +44,4 @@ Listed as "Optional iDoor Modules" — specific slot configuration not detailed 
 
 ## Sources
 
-[[ARK-6322]]
+[[ARK-6322]], [[ARK-1124C]], [[ARK-1124H]], [[MIC-770-V2]], [[MIC-770-V3]], [[MIC-785]]

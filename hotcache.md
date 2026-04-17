@@ -1,6 +1,6 @@
 ---
-updated: 2026-04-16
-session: 5
+updated: 2026-04-17
+session: 6
 ---
 
 # Hotcache
@@ -11,68 +11,67 @@ session: 5
 
 ## Wiki Domain
 
-This wiki is exclusively about **Advantech ARK-series industrial and edge PCs** (fanless box PCs, DIN-rail computers, expansion box PCs, and server-grade extreme performance PCs). All non-Advantech content has been removed.
+This wiki covers **Advantech industrial and edge PCs** — two product families:
+- **ARK series**: fanless box PCs, DIN-rail computers, expansion box PCs, server-grade extreme performance PCs (21 models)
+- **MIC-7 series**: compact modular box PCs with i-Module expansion (8 models, added 2026-04-17)
 
 ---
 
-## What Has Been Ingested (21 sources total)
+## MIC-7 Series — Just Ingested (8 models)
 
-**Advantech ARK hardware (21 models):**
-
-| Model | CPU | Form | Key Trait |
+| Model | CPU | Socket | Key Trait |
 |---|---|---|---|
-| ARK-6322 | J1900 | Box | 6× COM, 200×64mm |
-| ARK-10 | J1900 | Box | Built-in 2GB RAM + 500GB HDD |
-| ARK-1123C | E3825 | Box | Dual GbE, -30~70°C, FCC Class B |
-| ARK-1123H | J1900 | Box | Dual HDMI, SUSIAccess, RED option |
-| ARK-1123L | E3825 | Box | Single GbE, 8-bit GPIO, FCC Class A, -30~70°C |
-| ARK-11 | N3350 | DIN-rail | -30~70°C, DeviceOn, 12–28V |
-| ARK-1124C | N3350 | DIN-rail | 4× COM, single GbE, iDoor |
-| ARK-1124H | E3940 | DIN-rail | Dual HDMI 4K, TPM 2.0, iDoor |
-| ARK-1125C | x7211E | DIN-rail | DDR5, 4× COM, IEC 62443-4-2 SL2 |
-| ARK-1125H | N200 | DIN-rail | DDR5, 2× CAN Bus, dual 2.5GbE, RED |
-| ARK-1220F | E3940 | DIN-rail | 2.5 kV isolated GbE+COM+GPIO |
-| ARK-1220L | E3940 | DIN-rail | Dual HDMI 4K, -30~70°C, WISE-PaaS |
-| ARK-1221L | x6413E | DIN-rail | DDR4 32GB, -40°C, 1× CAN |
-| ARK-1250L | Core i5-11th | DIN-rail | 64GB DDR4, triple GbE, 4× COM, -40°C |
-| ARK-1551 | Core i5-8th | Slim wall | Swappable bay, RAID, NVMe, RED |
-| ARK-3520L | Core i5/i7-6th BGA | Expansion box | 8× COM, triple display, iDoor |
-| ARK-3532B | Xeon W / Core i-10th | Expansion box | PCIe x16 GPU slot, ECC DDR4, TPM 2.0 |
-| ARK-3532C | Xeon W / Core i-10th | Expansion box | 2× PCI legacy, ECC DDR4, 4× GbE |
-| ARK-3534C | Core i-12/13/14th | Expansion box | DDR5, 2× CAN, IEC 62443-4-2 SL2, no ECC |
-| ARK-3534D | Core i-12/13/14th | Expansion box | DDR5 ECC, 2× CAN, IEC 62443-4-2 SL2, 4× GbE |
-| **ARK-7060** | **Xeon D-1746TER / D-1715TER** | **Extreme perf box** | **Fan-cooled, AC power, IPMI 2.0, 128GB ECC DDR4, opt 10GbE** |
+| MIC-7700 | Intel 6th/7th Gen | LGA1151 v1 | Legacy; DVI (not HDMI); CFast; SIM slot; 9–36V |
+| MIC-770 | Intel 8th/9th Gen | LGA1151 v2 | HDMI; H310/Q370; DDR4 64GB; -10~40°C; 77mm |
+| MIC-770 V2 | Intel 10th Gen Xeon/Core | LGA1200 | RED; FlexIO; iDoor; -10~50°C; Azure/AWS certs |
+| MIC-770 V3 | Intel 12th–14th Gen | LGA1700 | DDR5 128GB; NVMe M.2; IP40; iBMC 1.2; -20~50°C |
+| MIC-760 | Intel 12th–14th Gen | LGA1700 | AMR/MMR; CANbus; 3× GbE; WiFi 36ms; ROS2 |
+| MIC-780 | Intel Core Ultra S2 | LGA1851 | **Integrated NPU**; DDR5 6400; 3× display; DIN rail |
+| MIC-785 | AMD Ryzen Emb/EPYC 4005 | AM5 | **First AMD in wiki**; machine vision; iBMC 1.2 |
+| mic-7000-series-overview | — | — | Family overview; i-Module GPU options; applications |
 
 ---
 
-## Key Facts to Remember
+## Critical MIC-Series Facts
 
-- **ARK-7060 = completely different tier:** Only model with active cooling (fans), AC power (100–240V), and IPMI 2.0 server management. -10~50°C requires 0.7m/s airflow. 230×205×390mm, 9.7kg.
-- **ARK-7060 has no COM ports** — only ARK without RS-232/422/485.
-- **128GB DDR4 ECC (ARK-7060)** — highest in wiki; 4× SO-DIMM, Xeon D-1700 SoC.
-- **Optional 10GbE:** ARK-7060 via AMO-I031 (Intel X550) — only 10GbE model in wiki.
-- **PCIe x16 GPU slot:** ARK-3532B and ARK-7060 — ARK-7060 supports up to 350W GPU.
-- **ECC memory:** ARK-3532B (DDR4), ARK-3532C (DDR4), ARK-3534D (DDR5), ARK-7060 (DDR4 128GB).
-- **IEC 62443-4-2 SL2:** ARK-1125C, ARK-3534C, ARK-3534D.
-- **CAN Bus (2×):** ARK-1125H, ARK-3534C, ARK-3534D. CAN (1×): ARK-1221L, ARK-1250L (opt).
-- **ARK-3534C/D spec sheets** are sparse — no operating temperature or power consumption listed.
+- **MIC-780 = first integrated NPU** in this wiki — Intel Core Ultra AI Boost NPU enables local AI inference without discrete GPU; unique across all ARK + MIC models
+- **MIC-785 = first and only AMD** in this wiki — Ryzen Embedded 7000/9000 + EPYC 4005 AM5
+- **MIC-760 = only WiFi + ROS2 model** — built for AMR/MMR mobile robots; 3× GbE for camera/LiDAR; CANbus; 36ms WiFi fast roaming
+- **MIC-770 V3 ≠ MIC-770**: DDR5 (vs DDR4), NVMe M.2 added, IP40, iBMC 1.2, -20°C start vs -10°C — major upgrade
+- **MIC-780W has 4× GbE; MIC-780H has 2× GbE** — same chassis, different chipset (W880 vs H810)
+- **i-Module = Advantech modular expansion chassis**: 1/2/4-slot PCIe, storage, GPU modules. MIC-78x uses its own i-Module series (not cross-compatible with MIC-770 i-Modules)
+- **MIC-780 minimum power is 12V** (not 9V like MIC-770 series) — matters for battery-powered deployments
+- **MIC-760, MIC-7700, MIC-785 have incomplete raw data** — feature lists only, no spec tables; dimensions/RAM/temp missing for these three
+
+---
+
+## ARK Series Key Facts (unchanged from session 5)
+
+- 21 ARK models; see `wiki/synthesis/advantech-ark-series-comparison.md` for full table
+- **ARK-7060**: only fan-cooled, AC power, IPMI 2.0, 128GB ECC DDR4, optional 10GbE — server tier
+- **ECC memory**: ARK-3532B (DDR4), ARK-3532C (DDR4), ARK-3534D (DDR5), ARK-7060 (DDR4)
+- **IEC 62443-4-2 SL2**: ARK-1125C, ARK-3534C, ARK-3534D
+- **CAN Bus**: ARK-1125H (2×), ARK-3534C/D (2×), ARK-1221L (1×), ARK-1250L (opt), MIC-760 (1+, unspec.)
 
 ---
 
 ## Open Questions (unresolved)
 
-- ARK-7060 U0A1 (10-core) power consumption: TBD in spec sheet
-- ARK-7060 COM ports: genuine absence or spec sheet omission?
-- ARK-7060 certifications not listed in spec sheet
-- ARK-3534C/D operating temperature: unconfirmed
-- CAN Bus version (2.0A/B/FD): unspecified across all models
-- ARK-3532C EMC/safety certification: missing from spec sheet
+- MIC-760 full specs: RAM, temp range lower bound, COM count, CANbus port count, dimensions
+- MIC-7700 full specs: temp, dimensions, certifications, DDR spec
+- MIC-785 full specs: RAM, display outputs, temp, dimensions, certs
+- MIC-780 out-of-band management method (iBMC 1.2 or Intel AMT not specified)
+- i-Module cross-generation compatibility matrix (MIC-770 vs MIC-78 series)
+- NPU TOPS rating for MIC-780 (Intel Core Ultra AI Boost varies by SKU)
+- iBMC 1.2 capability scope: KVM-over-IP or power/sensor only?
+- ARK-7060 U0A1 power consumption, certifications still TBD (from prior sessions)
 
 ---
 
 ## Wiki Structure Reminder
 
-- `index.md` — flat catalog of all 52 pages; read this when hotcache is insufficient
-- `wiki/synthesis/advantech-ark-series-comparison.md` — master comparison table, all 21 ARK models
-- `wiki/synthesis/ARK-1123x.md`, `ARK-1124x.md`, `ARK-1125x.md` — ARK-1000 sub-series hubs
-- `wiki/synthesis/ARK-3532x.md`, `ARK-3534x.md` — ARK-3000 sub-series hubs
+- `index.md` — flat catalog, 73 pages total; read when hotcache is insufficient
+- `wiki/synthesis/mic-series-comparison.md` — master MIC comparison (all 8 models)
+- `wiki/synthesis/MIC-770x.md` — MIC-7700 → V3 generational hub
+- `wiki/synthesis/MIC-78x.md` — MIC-780 vs MIC-785 hub
+- `wiki/synthesis/advantech-ark-series-comparison.md` — master ARK comparison (all 21 models)

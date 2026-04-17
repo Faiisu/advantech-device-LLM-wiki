@@ -3,8 +3,8 @@ title: "Intel 12th-14th Gen Core (Raptor Lake LGA1700)"
 type: entity
 tags: [processor, intel, alder-lake, raptor-lake, embedded, lga1700, ddr5, ecc]
 created: 2026-04-16
-updated: 2026-04-16
-sources: [ARK-3534C, ARK-3534D]
+updated: 2026-04-17
+sources: [ARK-3534C, ARK-3534D, MIC-760, MIC-770-V3]
 ---
 
 # Intel 12th-14th Gen Core (Raptor Lake LGA1700)
@@ -34,13 +34,21 @@ Intel's 12th through 14th Generation Core processors in the LGA1700 socketed for
 | H610E | No | No | 2× | No | ARK-3534C |
 | R680E | Yes | Yes | 4× | SW RAID | ARK-3534D |
 
+## Chipset Comparison Across Wiki Models
+
+| Chipset | ECC | RAID | DDR5 | Used In |
+|---|---|---|---|---|
+| H610E | No | No | 4800MHz | ARK-3534C, MIC-770 V3 (H610E narrow variant) |
+| R680E | Yes | SW RAID | 4800MHz | ARK-3534D, MIC-770 V3 (R680E wide variant) |
+| R680E (MIC) | No (MIC-770 V3) | SW RAID | 4800MHz | MIC-770 V3 — note: R680E used but ECC not confirmed for MIC variant |
+
 ## Role in This Wiki
 
-Powers the [[ARK-3534C]] and [[ARK-3534D]]. Same CPU generation as the ARK-1125 series (Alder Lake-N) but in a different product tier: desktop-class 65W TDP in an expansion box chassis vs low-power 6W SoCs in compact DIN-rail units. Both ARK-3534 models add DDR5, CAN Bus, and IEC 62443-4-2 SL2 to the ARK-3000 expansion tier.
+Powers four products across two product lines: [[ARK-3534C]], [[ARK-3534D]] (expansion box PCs) and [[MIC-760]], [[MIC-770-V3]] (compact box PCs). Same CPU generation as the ARK-1125 series (Alder Lake-N) but at desktop-class 65W TDP. The MIC-770 V3 adds IP40 dust protection, iBMC 1.2, and NVMe M.2 vs the ARK-3534 expansion box approach.
 
 ## Appearances
 
-[[ARK-3534C]], [[ARK-3534D]]
+[[ARK-3534C]], [[ARK-3534D]], [[MIC-760]], [[MIC-770-V3]]
 
 ## Related Entities
 

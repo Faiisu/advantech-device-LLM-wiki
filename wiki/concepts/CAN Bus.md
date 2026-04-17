@@ -26,7 +26,7 @@ CAN Bus is the dominant protocol in automotive ECU networks, industrial robots, 
 - **Error detection:** CRC, bit stuffing, ack slots — very robust in high-noise environments
 - **Typical range:** up to 40 m at 1 Mbps; longer at lower speeds
 
-## CAN in ARK Series
+## CAN in ARK and MIC Series
 
 | Model | CAN Ports | Series Tier | Notes |
 |---|---|---|---|
@@ -35,13 +35,14 @@ CAN Bus is the dominant protocol in automotive ECU networks, industrial robots, 
 | [[ARK-1250L]] | 1× CAN Bus | Wide DIN-rail | Optional (CAN 2.0) |
 | [[ARK-3534C]] | 2× CAN Bus | Expansion box PC | Feature list (not in spec table) |
 | [[ARK-3534D]] | 2× CAN Bus | Expansion box PC | Feature list (not in spec table) |
+| [[MIC-760]] | CANbus | Compact AMR/MMR controller | Count unspecified; isolated; ROS2-integrated |
 
 CAN version (2.0A/2.0B/FD) not specified in any source spec.
 
 ## Related Concepts
 
-[[Industrial IO]], [[Fanless Embedded PC]], [[DIN-Rail Mounting]]
+[[Industrial IO]], [[Fanless Embedded PC]], [[DIN-Rail Mounting]], [[AMR MMR]], [[EtherCAT]], [[ROS2]]
 
 ## Sources
 
-[[ARK-1125H]], [[ARK-1221L]], [[ARK-1250L]], [[ARK-3534C]], [[ARK-3534D]]
+[[ARK-1125H]], [[ARK-1221L]], [[ARK-1250L]], [[ARK-3534C]], [[ARK-3534D]], [[MIC-760]]

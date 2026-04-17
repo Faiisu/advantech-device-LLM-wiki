@@ -1,6 +1,6 @@
 ---
 title: "Wiki Index"
-updated: 2026-04-16
+updated: 2026-04-17
 ---
 
 # Wiki Index
@@ -64,13 +64,45 @@ updated: 2026-04-16
 |---|---|---|
 | [[ARK-7060]] | Xeon D-1746TER / D-1715TER | **Fan-cooled, AC power, IPMI 2.0**, 128GB ECC DDR4, opt 10GbE |
 
+### Advantech MIC Hardware
+
+#### MIC-7 Series Overview
+
+- [[mic-7000-series-overview]] — Family overview: MIC-7700→MIC-785, i-Module GPU options, target applications
+
+#### MIC-770x Sub-Series (Compact 77mm Box PCs, generational)
+
+| Page | CPU | Key Trait |
+|---|---|---|
+| [[MIC-7700]] | Intel 6th/7th Gen LGA1151 | Legacy; DVI; CFast; SIM; 9–36V |
+| [[MIC-770]] | Intel 8th/9th Gen LGA1151 | HDMI; H310/Q370; 64GB DDR4; -10~40°C |
+| [[MIC-770-V2]] | Intel 10th Gen Xeon/Core LGA1200 | RED; FlexIO; iDoor; -10~50°C |
+| [[MIC-770-V3]] | Intel 12th–14th Gen LGA1700 | DDR5 128GB; NVMe M.2; IP40; iBMC 1.2; -20~50°C |
+
+**Hub:** [[MIC-770x]] — generational comparison and selection guide
+
+#### MIC-760 (AMR/MMR Controller)
+
+| Page | CPU | Key Trait |
+|---|---|---|
+| [[MIC-760]] | Intel 12th–14th Gen LGA1700 | AMR/MMR; CANbus; 3× GbE; WiFi 36ms; ROS2; Ubuntu |
+
+#### MIC-78x Sub-Series (Compact 195mm Box PCs, latest gen)
+
+| Page | CPU | Key Trait |
+|---|---|---|
+| [[MIC-780]] | Intel Core Ultra 5/7/9 Series 2 LGA1851 | **Integrated NPU**; DDR5 6400MHz; 3× display; DIN rail |
+| [[MIC-785]] | AMD Ryzen Embedded / EPYC 4005 AM5 | **First AMD**; machine vision; iBMC 1.2 |
+
+**Hub:** [[MIC-78x]] — Intel Core Ultra vs AMD comparison
+
 ---
 
 ## Entities (`wiki/entities/`)
 
 ### Organisations
 
-- [[Advantech]] — Industrial PC manufacturer; ARK-6000/1000/1200/1500/3000/7000 product lines.
+- [[Advantech]] — Industrial PC manufacturer; ARK-series and MIC-7 series product lines.
 
 ### Processors — Bay Trail (2013–2014)
 
@@ -101,13 +133,22 @@ updated: 2026-04-16
 | [[Intel Atom x7211E]] | ARK-1125C |
 | [[Intel N200]] | ARK-1125H |
 
-### Processors — ARK-3000 Expansion Tier
+### Processors — Desktop Socketed (MIC-7700 through MIC-770 V2)
 
 | Page | Platform | TDP | Used In |
 |---|---|---|---|
+| [[Intel 6th-7th Gen Core Desktop (LGA1151)]] | Skylake/Kaby Lake LGA1151 v1 | 65W | MIC-7700 |
+| [[Intel 8th-9th Gen Core (LGA1151)]] | Coffee Lake LGA1151 v2 | 65W | MIC-770 |
 | [[Intel 6th Gen Core (Skylake-H)]] | Skylake-H BGA | 45W | ARK-3520L |
-| [[Intel 10th Gen Xeon W (Comet Lake-S)]] | Comet Lake LGA1200 | 35–65W | ARK-3532B, ARK-3532C |
-| [[Intel 12th-14th Gen Core (Raptor Lake LGA1700)]] | Raptor Lake LGA1700 | 65W | ARK-3534C, ARK-3534D |
+| [[Intel 10th Gen Xeon W (Comet Lake-S)]] | Comet Lake LGA1200 | 35–65W | ARK-3532B, ARK-3532C, MIC-770 V2 |
+| [[Intel 12th-14th Gen Core (Raptor Lake LGA1700)]] | Raptor Lake LGA1700 | 65W | ARK-3534C, ARK-3534D, MIC-760, MIC-770 V3 |
+
+### Processors — Latest Generation (MIC-78x)
+
+| Page | Platform | TDP | Used In |
+|---|---|---|---|
+| [[Intel Core Ultra Series 2]] | Meteor Lake LGA1851 | 65W | MIC-780 |
+| [[AMD Ryzen Embedded AM5]] | Zen 4 AM5 (LGA1718) | varies | MIC-785 |
 
 ### Processors — ARK-7000 Extreme Performance Tier
 
@@ -124,19 +165,28 @@ updated: 2026-04-16
 - [[Fanless Embedded PC]] — Passive-cooled industrial PC; no moving parts; spans compact DIN-rail to large expansion box tiers. ARK-7060 is fan-cooled (not covered by this concept).
 - [[DIN-Rail Mounting]] — 35mm industrial rail standard; dominant in control panel integration.
 - [[Mini PCIe]] — Compact PCIe expansion slot for WLAN, WWAN, mSATA in embedded platforms.
-- [[iDoor]] — Advantech modular I/O expansion system; optional second-layer chassis add-on.
+- [[iDoor]] — Advantech rear-panel modular I/O expansion; ARK-6322, ARK-1124x, MIC-770 V2/V3, MIC-785.
+- [[i-Module]] — Advantech modular PCIe/GPU expansion chassis; attaches to MIC-7 series; GPU options up to 350W.
+- [[FlexIO]] — Advantech front-panel I/O expansion kit; adds display/COM/DIO modules; MIC-770 V2/V3, MIC-785.
+- [[NPU]] — Neural Processing Unit; integrated AI accelerator in Intel Core Ultra; MIC-780 is first fanless IPC with NPU.
 
 ### Industrial IO & Connectivity
 
 - [[Industrial IO]] — Serial/digital interfaces for field devices: RS-232/422/485, GPIO, GbE.
-- [[CAN Bus]] — Automotive/industrial differential serial bus; 2-wire, multi-master. Models: ARK-1125H (2×), ARK-1221L (1×), ARK-1250L (opt), ARK-3534C/D (2×).
-- [[Isolated IO]] — Galvanic isolation on I/O ports; protects against ground faults. Only model: ARK-1220F (2.5 kV).
+- [[CAN Bus]] — Automotive/industrial differential serial bus; 2-wire, multi-master. Models: ARK-1125H (2×), ARK-1221L (1×), ARK-1250L (opt), ARK-3534C/D (2×), MIC-760 (CANbus, count unspec.).
+- [[Isolated IO]] — Galvanic isolation on I/O ports; protects against ground faults. Only ARK model: ARK-1220F (2.5 kV).
 - [[IPMI]] — Server-grade out-of-band management (hardware-level, OS-independent). Only model: ARK-7060 (IPMI 2.0, Aspeed AST2500 BMC).
+- [[EtherCAT]] — Real-time Industrial Ethernet fieldbus; deterministic motion control; MIC-760 ROS2 node support.
+
+### Robotics & AI
+
+- [[AMR MMR]] — Autonomous Mobile Robot / Material Movement Robot; compute requirements; MIC-760 target platform.
+- [[ROS2]] — Robot Operating System 2; open robotics middleware; MIC-760 ships with ROS2 (EtherCAT + Modbus nodes).
 
 ### Software & Platform
 
 - [[DeviceOn]] — Advantech IoT device management platform; OTA updates, monitoring, AI deployment.
-- [[SUSIAccess]] — Advantech embedded software API for hardware feature access; older generation.
+- [[SUSIAccess]] — Advantech embedded software API (also called SUSI API); hardware feature access across ARK and MIC series.
 - [[IEC 62443]] — OT cybersecurity standard; SL2 certified models: ARK-1125C, ARK-3534C, ARK-3534D.
 
 ---
@@ -149,7 +199,10 @@ updated: 2026-04-16
 - [[ARK-1125x]] — Sub-series hub: ARK-1125C vs ARK-1125H. Axis: IEC 62443 vs CAN Bus + RED.
 - [[ARK-3532x]] — Sub-series hub: ARK-3532B vs ARK-3532C. Axis: PCIe x16 GPU vs PCI legacy.
 - [[ARK-3534x]] — Sub-series hub: ARK-3534C vs ARK-3534D. Axis: H610E (no ECC) vs R680E (ECC, 4× GbE).
+- [[MIC-770x]] — Sub-series hub: MIC-7700 → MIC-770 → V2 → V3. Generational comparison + selection guide.
+- [[MIC-78x]] — Sub-series hub: MIC-780 (Intel Core Ultra + NPU) vs MIC-785 (AMD AM5).
+- [[mic-series-comparison]] — Master comparison table: all 8 MIC-7 models, CPU, memory, temp, features, application guide.
 
 ---
 
-**Total pages:** 52 | **Last updated:** 2026-04-16
+**Total pages:** 73 | **Last updated:** 2026-04-17

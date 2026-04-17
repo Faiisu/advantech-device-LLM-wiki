@@ -3,8 +3,8 @@ title: "Intel 10th Gen Xeon W (Comet Lake-S)"
 type: entity
 tags: [processor, intel, comet-lake, embedded, xeon, lga1200, ecc]
 created: 2026-04-16
-updated: 2026-04-16
-sources: [ARK-3532B, ARK-3532C]
+updated: 2026-04-17
+sources: [ARK-3532B, ARK-3532C, MIC-770-V2]
 ---
 
 # Intel 10th Gen Xeon W (Comet Lake-S)
@@ -35,11 +35,11 @@ Intel's 10th Generation Core and Xeon W processors in the LGA1200 socketed form 
 
 ## Role in This Wiki
 
-Powers the [[ARK-3532B]] and [[ARK-3532C]]. These are the first models with an LGA socket (CPU upgradeable), ECC RAM support, 4× GbE, and (on ARK-3532B) a PCIe x16 graphics card slot. The W480E chipset bridges industrial reliability requirements (ECC, long lifecycle) with workstation-class performance.
+Powers three products: [[ARK-3532B]] and [[ARK-3532C]] (expansion box PCs using W480E with ECC) and [[MIC-770-V2]] (compact box PC using H420E/W480E chipset, no ECC confirmed). The W480E chipset bridges industrial reliability (ECC, long lifecycle) with workstation-class performance in the ARK-3532 line; MIC-770 V2 uses the same CPU generation but in a compact 77mm form factor without the PCIe expansion slots.
 
 ## Appearances
 
-[[ARK-3532B]], [[ARK-3532C]]
+[[ARK-3532B]], [[ARK-3532C]], [[MIC-770-V2]]
 
 ## Related Entities
 
